@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web의 변화 양상</title>
+    <style>
+        .image-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h3>세대별 web</h3>
+    <hr>
+    <div class="image-container">
+        <img src="./web1.jpg" width="200" height="200" alt="1세대 web">
+        <div>
+            <p>
+                웹 서버가 HTML 전체를 클라이언트에게 전송하는 방식으로 운영되었다.<br>
+                1세대 웹의 특징은 '정적'이라는 것이다. 왜냐하면 이땐 Javascript가 없었고
+                HTML, CSS 만을 사용했었는데, 이 둘 자체가 정적이기 때문이다.
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="image-container">
+        <img src="./web2.jpg" width="200" height="200" alt="2세대 web">
+        <div>
+            <p>
+                2세대 웹 부터는 User Interaction이 증가되고 동적이게 되었다. <br>
+                Javascript가 출현하면서 다이나믹한 요소들의 요구가 충족되었다.
+                또한, Web Server에서 전체 HTML페이지 뿐만 아니라 Javascript를 통해 서버와 필요한 
+                데이터를 주고받으므로 동적인 User Interaction을 구현하게 되었다.
+                하지만, 이때까진 API의 개념은 없었다.
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="image-container">
+        <img src="./web3.jpg" width="200" height="200" alt="3세대 web">
+        <div>
+            <p>
+                3세대 웹 부터는 Frontend 와 Backend가 구별되기 시작하였다.<br>
+                이제는 파일을 처음 한 번만 송수신하고 그 뒤로는 실시간 데이터만 주고 받는 방식으로 운영되었다.
+                Frontend와 Backend가 명확히 나뉘어서 두 시스템으로 웹이 동작하게 되었고, Frontend를 더 멋있게 구현할 수 있게
+                도와주는 React나, Vue와 같은 Framework or Library들이 탄생하였다.
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="image-container">
+        <img src="./internet.png" width="200" height="200" alt="인터넷">
+        <div>
+            <p>
+                인터넷은 1960년대에 출현하였고, 처음엔 군사 목적으로 쓰였다.
+                중앙 집중적인 통신 시스템은 핵공격에 취약했어서 핵 공격에도 견딜 수 있는
+                강인한 통신 시스템이 필요했고, 이 요구에 맞게 개발된 것이 '인터넷'이다.
+                <br>
+                웹과 인터넷의 차이점은 우선 인터넷 안에 웹이라는 서비스가 존재하는 것이다. 
+                웹은 인터넷의 등장인 1960년대의 30년 뒤인 1990년에 웹이 등장하였다.
+                우리가 일반적으로 생각하는 인터넷, 인터넷의 대중화는 웹이 등장하면서 시작되었다고 해도
+                과언이 아니다. 
+            </p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <button type="button" onclick="redirectToQuestion()" style="font-size:large; font-weight: bold; color: black; background-color: rgb(255, 223, 124); border-color: rgb(255, 223, 124); width: 150px; height: 50px; margin: 20px auto;">
+        퀴즈 페이지로 이동
+    </button>
+
+    <script>
+        // 'question.html'로 이동하는 함수
+        function redirectToQuestion() {
+            window.location.href = 'question.html';
+        }
+    </script>
+</body>
+</html>
